@@ -1,0 +1,105 @@
+<!--  -->
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<title>Index</title>
+
+<style type="text/css">
+body{
+
+
+ background-image: url(images/backg.jpg);
+
+
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h4{
+color: white;
+}
+
+</style>
+</h:head>
+<h:body>
+
+	<header style="height: 30px" class="jumbotron text-center">
+		<div class="container">
+			<div class="row">
+				<a href="index.xhtml" class="col-md-2"> <img width="50px"
+					height="50px" src="images/logo.png" alt="Site logo"
+					title="Retour à la page principale" /></a>
+				<h2>
+					<h:outputText value="Bienvenue !" />				</h2>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="container">
+		<div class="row">
+			<nav class="navbar col-md-12" style="margin-bottom: 30px;">
+				<div>
+					<h4>
+						<h:outputText
+						value="Pour afficher la liste des catégories disponibles, cliquez ici : " />
+					</h4>
+
+					<div class="row">
+						<div class="col-md-8">
+							 <h:outputLink class="btn btn-primary mb-2" value="listCategories.xhtml"> Liste Categories </h:outputLink>
+							<!--  <h:commandButton class="btn btn-primary mb-2" type="button" action="{listCategories.xhtml}" value="Liste Categories" />-->
+						</div>
+					</div>
+				</div>
+				<div>
+					<h4>
+						<h:outputText value="Pour ajouter un produit, cliquez ici : " />
+					</h4>
+					<div class="row">
+						<div class="col-md-8">
+							<h:outputLink class="btn btn-primary mb-2" value="addProduit.xhtml"> Ajouter un produit</h:outputLink>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+	
+
+	<footer style="margin-top: 100px" class="jumbotron text-center">
+		<h2 style="margin-bottom: 20px;">
+			merci de bien vouloir visiter notre site<br />Pour plus d'informations.
+		</h2>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#">Instagram</a><br /> 
+					<a href="#">facebook</a><br />
+					<a href="#">tweeter</a>
+				</div>
+				 <div class="col-md-8">
+                        <a href="#">Contactez-nous</a><br/>
+                        <a href="#">Avis de nos client</a><br/>
+                        <a href="#">Questions</a>
+                    </div> 
+			</div>
+			</div>
+	</footer>
+</h:body>
+
+</html>
